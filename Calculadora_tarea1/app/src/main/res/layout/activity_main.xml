@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Titulo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa los valores"
+        android:textColor="#0AB0CD"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/Valores"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/NumberA"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/NumberB"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/Calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DD0D0D"
+            android:backgroundTint="#DA0F0F"
+            android:onClick="calculo"
+            android:text="Calcular"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            app:iconTint="#FFFFFF"
+            app:rippleColor="#FFFFFF"
+            app:strokeColor="#FFFFFF"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Respuestas"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:id="@+id/resuma"
+            android:layout_width="133dp"
+            android:layout_height="31dp"
+            android:text="Suma"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/remultiplicacion"
+            android:layout_width="134dp"
+            android:layout_height="32dp"
+            android:text="Multiplicacion"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>
